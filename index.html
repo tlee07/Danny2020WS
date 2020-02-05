@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2020 WS Danny Lee</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script src="./main.js"></script>
+</head>
+<body>
+    <!-- <img class="cursor" src="./assets/cursor-01.png" alt="cursor"> -->
+
+   
+        <!-- <li></li> -->
+        <!-- <li>WHAT IS CODE</li>
+        <li>GONG XI FA CAI</li>
+        <li>CIRCLE RHYTHM</li>
+        <li>OPEN SOURCE GRID</li> -->
+
+
+        <div id="home"></div>
+
+
+        <div class='cube' id="menucube" onclick="openmenu()" > 
+            <div class='face side' id="menuside"></div>
+            <div class='face front' id="menufront"></div>
+            <div class='face top' id="menutop"></div>
+
+            <ul class="menu" id="menu0">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                
+                <!-- <li></li> -->
+                <!-- <li>WHAT IS CODE</li>
+                <li>GONG XI FA CAI</li>
+                <li>CIRCLE RHYTHM</li>
+                <li>OPEN SOURCE GRID</li> -->
+            </ul>
+        </div>
+   
+    <h1>
+        TING-HSUN DANNY LEE 
+        <br>
+        2020 RISD WS
+        <br>
+        WEB DESIGN
+
+    </h1>
+    
+
+
+    
+<svg onclick="scrollWin()" version="1.1" id="arrowdown" onmouseover="movedown()"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+     <path class="st0" d="M429.25,470.79"/>
+<line class="st0" x1="306" y1="594.05" x2="182.74" y2="470.79"/>
+<line class="st0" x1="306" y1="128.44" x2="306" y2="594.05"/>
+<path class="st0" d="M303.13,596.92"/>
+<polyline class="st0" points="429.25,470.79 306,594.05 304.41,595.64 302.12,597.93 "/>
+
+</svg>
+
+
+
+
+    <div class='cube' id="ground" onmouseover="changegroundcolor()" >
+        <div class='face side' id="groundside"></div>
+        <div class='face front' id="groundfront"></div>
+        <div class='face top' id="groundtop"></div>
+    </div> 
+
+<!-- readingresponsewhite -->
+
+    <div class='cube' id="web4" onclick="changeweb4color()" ondblclick="closeweb4color()" onmousemove="" >
+        <div class='face side' id="web4side"></div>
+        <div class='face front' id="web4front"></div>
+        <div class='face top' id="web4top"></div>
+
+        <div class="speech-bubble" id="speech4">
+            <div class="arrow bottom right"></div>
+            <button class="close" id="close4" onmousedown="closespeech4()">&times;</button>
+            <a onclick="scrolltobanner4()">OPEN SOURCE GRID &#10230; </a>
+            <!-- href="https://tlee07.github.io/opensource/" target="_blank" -->
+        </div>
+    </div> 
+
+
+    <!-- museumblack -->
+    <div class='cube' id="web3" onclick="changeweb3color()" ondblclick="closeweb3color()">
+        <div class='face side' id="web3side"></div>
+        <div class='face front' id="web3front"></div>
+        <div class='face top' id="web3top"></div>
+
+        <div class="speech-bubble" id="speech3">
+            <div class="arrow bottom right"></div>
+            <button class="close" id="close3" onmousedown="closespeech3()">&times;</button>
+            <a onclick="scrolltobanner2()">CIRCLE RHYTHM &#10230;</a>
+            <!-- href="https://tlee07.github.io/circle-rhythm/" target="_blank" -->
+        </div>
+    </div> 
+
+    
+    <!-- whatiscodeblue -->
+    <div class='cube' id="web1" onclick="changeweb1color()" ondblclick="closeweb1color()"> 
+        <div class='face side' id="web1side"></div>
+        <div class='face front' id="web1front"></div>
+        <div class='face top' id="web1top"></div>
+
+        <div class="speech-bubble" id="speech1">
+            <div class="arrow bottom right"></div>
+            <button class="close" id="close1" onmousedown="closespeech1()">&times;</button>
+            <a onclick="scrolltobanner1()" >WHAT IS CODE? &#10230;</a>
+            <!-- href="https://tlee07.github.io/whatiscode2/" target="_blank" -->
+        </div>
+    </div>
+
+
+
+
+     <!-- chinesnewyearred -->
+     <div class='cube' id="web2" onclick="changeweb2color()" ondblclick="closeweb2color()">
+        <div class='face side' id="web2side"></div>
+        <div class='face front' id="web2front"></div>
+        <div class='face top' id="web2top"></div>
+
+        <div class="speech-bubble" id="speech2">
+            <div class="arrow bottom right"></div>
+            <button class="close" id="close2" onmousedown="closespeech2()">&times;</button>
+            <a onclick="scrolltobanner3()">GONG XI FA CAI &#10230;</a>
+            <!-- href="https://tlee07.github.io/chinesenewyear/" target="_blank" -->
+        </div>
+    </div>  
+
+
+    <div class="bannergrid" id="banner1grid">
+
+        <div class="bannertext" id="banner1text">
+            <!-- <div class='cube dropdown' id="menucube" onclick="openmenu1()"> 
+                <div class='face side' id="menuside"></div>
+                <div class='face front' id="menufront"></div>
+                <div class='face top' id="menutop"></div>
+
+                <ul class="menu" id="menu1">
+                    <li><a href="#home">HOME</a></li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+
+            </div> -->
+            <p class="title">
+            01
+            <br>
+            WHAT IS CODE?
+            </p>
+            <br>
+            <p class="keyword">web / graphic / coding</p>
+            <p class="description">A website in response to Paul Frank’s “What is code, Ch.3”</p>
+            <br><br>
+            <p class="viewproject"><u><a href="https://tlee07.github.io/whatiscode/" target="_blank">view project</a></u> </p>
+        </div>
+
+        <div class="bannerbg" id="banner1bg"> 
+            <img src="./assets/web1.png" id="banner1img" alt="web1" >
+        </div>
+
+    </div>
+    
+
+    <div class="bannergrid" id="banner2grid">
+
+        <div class="bannertext" id="banner2text" onclick="openmenu2()">
+            <!-- <div class='cube' id="menucube" > 
+                <div class='face side' id="menuside"></div>
+                <div class='face front' id="menufront"></div>
+                <div class='face top' id="menutop"></div>
+
+                <ul class="menu" id="menu2">
+                    <li><a href="#home">HOME</a></li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+
+            </div> -->
+            <p class="title" id="title2" >
+            02
+            <br>
+            CIRCLE RHYTHM
+            </p>
+            <br>
+            <p class="keyword" id="keyword2">web / graphic / coding</p>
+            <p class="description" id="description2">An interactive experiment inspired by Eduardo Mac Entryre's 
+            'En Violeta'  </p>
+            <br><br>
+            <p class="viewproject" id="viewproject2"><a href="https://tlee07.github.io/circle-rhythm/" target="_blank"><u>view project</u></a> </p>
+        </div>
+
+        <div class="bannerbg" id="banner2bg"> 
+            <img src="./assets/rhythm.png" id="banner2img" alt="banner2" >
+        </div>
+
+    </div>
+
+
+    <div class="bannergrid" id="banner3grid">
+
+        <div class="bannertext" id="banner3text" onmousedown="openmenu3()">
+            <!-- <div class='cube' id="menucube" > 
+                <div class='face side' id="menuside"></div>
+                <div class='face front' id="menufront"></div>
+                <div class='face top' id="menutop"></div>
+
+                <ul class="menu" id="menu3">
+                    <li><a href="#home">HOME</a></li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div> -->
+            <p class="title">
+            03
+            <br>
+            GONG XI FA CAI
+            </p>
+            <br>
+            <p class="keyword">web / graphic / coding</p>
+            <p class="description">A fun web game for the celebration of 2020 Chinese New Year </p>
+            <br><br>
+            <p class="viewproject"><u><a href="https://tlee07.github.io/chinesenewyear/" target="_blank">view project</a></u> </p>
+        </div>
+
+        <div class="bannerbg" id="banner3bg"> 
+            <img src="./assets/newyear.png" id="banner3img" alt="web1" >
+        </div>
+
+    </div>
+
+
+    <div class="bannergrid" id="banner4grid">
+
+        <div class="bannertext" id="banner4text" onclick="openmenu4()">
+            <!-- <div class='cube' id="menucube" > 
+                <div class='face side' id="menuside"></div>
+                <div class='face front' id="menufront"></div>
+                <div class='face top' id="menutop"></div>
+
+                <ul class="menu" id="menu4">
+                    <li><a href="#home">HOME</a></li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div> -->
+            <p class="title">
+            04
+            <br>
+            OPEN SOURCE GRID
+            </p>
+            <br>
+            <p class="keyword">web / graphic / coding</p>
+            <p class="description">A open source template in response to Laurel Schwulst's "My website 
+                is a shifting house next to a river of knowledge. What could yours be?" </p>
+            <br><br>
+            <p class="viewproject"><a href="https://tlee07.github.io/opensource/" target="_blank"><u>view project</u></a> </p>
+        </div>
+
+        <div class="bannerbg" id="banner4bg"> 
+            <img src="./assets/source2.png" id="banner4img" alt="web1" >
+        </div>
+
+    </div>
+
+
+    <svg onclick="scrollUp()" version="1.1" id="arrowup" onmouseover="movedown()"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+     <path class="st0" d="M429.25,470.79"/>
+<line class="st0" x1="306" y1="594.05" x2="182.74" y2="470.79"/>
+<line class="st0" x1="306" y1="128.44" x2="306" y2="594.05"/>
+<path class="st0" d="M303.13,596.92"/>
+<polyline class="st0" points="429.25,470.79 306,594.05 304.41,595.64 302.12,597.93 "/>
+
+</svg>
+
+<p class="end">
+    This website is coded by Danny Lee and hosted by Github.
+</p>
+
+
+    
+
+</body>
+</html>

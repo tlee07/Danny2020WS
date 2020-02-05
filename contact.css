@@ -1,0 +1,209 @@
+@import url(‘https://fonts.googleapis.com/css?family=Noto+Sans+JP&subset=japanese’);
+
+
+h1{
+    position:absolute;
+    font-size:300%;
+    font-family: ‘Noto Sans JP’, sans-serif;
+    text-align: left;
+    left:3%;
+    top:13%;
+    font-weight:lighter;
+
+}
+
+#links{
+  position:absolute;
+  font-size:60%;
+  font-family: ‘Noto Sans JP’, sans-serif;
+  text-align: left;
+  /* left:3%; */
+  /* top:36%; */
+  font-weight:lighter;
+  cursor:pointer;
+
+}
+
+#resume{
+  /* top:60%; */
+}
+
+
+
+
+#name{
+  left:3%;
+  top:13%;
+  line-height:130%;
+}
+
+#contacts{
+  /* position:static */
+  /* left:3%;
+  top:27%; */
+  /* cursor:pointer; */
+ 
+}
+
+/* .gridcontainer{
+  position:absolute;
+  background-color: royalblue;
+  display:grid;
+  grid-template-rows:1fr 10fr;
+  width:100vw;
+  height:100vh;
+  border:1px solid black;
+} */
+
+/* #container{
+position:relative;
+width:100vw;
+height:100vh;
+top: -100%; 
+left:30%;
+border:1px solid black;
+background-color: aqua; 
+} */
+
+#arrowup{
+    position:absolute;
+    fill:#FFFFFF;
+    stroke:#000000;
+    stroke-width:15;
+    stroke-miterlimit:10;
+    transform: scale(0.05) rotate(90deg);
+    /* grid-row-start: 0;
+    grid-row-end: 1; */
+    left:-45%; 
+    top:-110%; 
+    }
+    
+    #arrowup:hover{
+      animation:moveleft 0.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    
+    @keyframes moveleft{
+      0%{
+        left:-45%;
+      }
+      100%{
+        left:-46%;
+        /* opacity:0%; */
+      }
+    }
+    
+  /* #arrowright{
+    position:absolute;
+    fill:#FFFFFF;
+    stroke:#000000;
+    stroke-width:15;
+    stroke-miterlimit:10;
+    transform: scale(0.04) rotate(-90deg);
+    left:-35%;
+    top:-83%;
+  
+  } */
+    
+ 
+
+    .cube {
+        cursor: pointer;
+        /* position:absolute;s */
+        width: 300px;
+        height: 300px;
+        /* overflow: hidden; */
+        
+      }
+
+      .face {
+        transform-origin: 0 0;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: white;
+        border:3px solid black;
+      }
+    
+    
+      
+      .side {
+        
+        /* border-top:2px solid black; */
+        -ms-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+        -webkit-transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+        transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.864);
+      }
+
+      .top {
+        -ms-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+        -webkit-transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+        transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.864);
+      }
+      
+      .front {
+    
+        -ms-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+        -webkit-transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(68px, -131px);
+        transform: rotate(90deg) skewX(-30deg) scaleY(0.864) translate(67.5px, -134.5px);
+      }
+
+
+
+      #menucube{
+        /* position:absolute; */
+        position: fixed;
+        top:-5%;
+        left:87%;
+        transform: scale(0.25);
+        z-index:100;
+      }
+
+    #menucube:hover{
+        animation:menucubedown 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      
+      
+      @keyframes menucubedown{
+        0%{
+          top:-5%;
+        }
+        100%{
+          top:-6%;
+          /* opacity:0%; */
+        }
+      }
+
+
+ul.menu{
+    position:absolute;
+    list-style-type: none;
+    font-size:300%;
+    font-family: ‘Noto Sans JP’, sans-serif;
+    font-weight:lighter;
+    right:120%;
+    line-height: 140%;
+    top:0%;
+    width:150%;
+    text-align: right;
+    visibility: hidden;
+    color:black;
+    text-decoration: none;
+  }
+
+
+  li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    
+}
+
